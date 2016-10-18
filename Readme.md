@@ -1,6 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Алексей Егоренков](https://up.htmlacademy.ru/htmlcss/15/user/191771).
+* Наставник: [Алексей Белов](https://up.htmlacademy.ru/htmlcss/15/user/96038).
 
 ---
 
