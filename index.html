@@ -7,12 +7,22 @@
   <body>
     <header class="main-header">
       <div class="container">
-        <ul>
-          <li><a href="#">ИНФОРМАЦИЯ</a></li>
-          <li><a href="#">ФОТО И ВИДЕО</a></li>
-          <li><a href="#">КАРТА ШТАТА</a></li>
-          <li><a href="#">ГОСТИНИЦЫ</a></li>
-        </ul>
+        <nav class="main-navigation">
+          <ul class="main-nav-list">
+            <li class="main-nav-item">
+              <a class="main-nav-link" href="#">ИНФОРМАЦИЯ</a>
+            </li>
+            <li class="main-nav-item">
+              <a class="main-nav-link" href="#">ФОТО И ВИДЕО</a>
+            </li>
+            <li class="main-nav-item">
+              <a class="main-nav-link" href="#">КАРТА ШТАТА</a>
+            </li>
+            <li class="main-nav-item">
+              <a class="main-nav-link" href="#">ГОСТИНИЦЫ</a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
     <main class="container">
@@ -32,32 +42,32 @@
         <!-- Или все элементы, кроме лого можно прописать через CSS? -->
       </div>
       <div class="content">
-        <h3>СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!</h3>
-        <span>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</span>
+        <h3 class="introduction">СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!</h3>
+        <span class="causes">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</span>
         <div class="content-item">
           <div class="content-text">
-            <h3>НАСТОЯЩИЙ ГОРОДОК</h3>
-            <p>— №1 — <br>СЕДОНА — НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+            <h3 class="content-header">НАСТОЯЩИЙ ГОРОДОК</h3>
+            <p class="content-subtitle">— №1 — <br>СЕДОНА — НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
           </div>
           <div class="content-img">
             <img src="http://placehold.it/150x100">
           </div>
         </div>
-        <div class="features">
+        <div class="feature">
           <div class="feature-item">
             <img src="http://placehold.it/150x100">
-            <h3>Жилье</h3>
-            <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+            <h3 class="feature-header">Жилье</h3>
+            <p class="feature-subtitle">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </div>
           <div class="feature-item">
             <img src="http://placehold.it/150x100">
-            <h3>ЕДА</h3>
-            <p>Всегда заказывайте ФИРМЕННЫЙ БУРГЕР,Вы НЕ разочаруетесь!</p>
+            <h3 class="feature-header">ЕДА</h3>
+            <p class="feature-subtitle">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР,Вы НЕ разочаруетесь!</p>
           </div>
           <div class="feature-item">
             <img src="http://placehold.it/150x100">
-            <h3>СУВЕНИРЫ</h3>
-            <p>Не только китайского, но и местного производства!</p>
+            <h3 class="feature-header">СУВЕНИРЫ</h3>
+            <p class="feature-subtitle">Не только китайского, но и местного производства!</p>
           </div>
         </div>
         <div class="content-item">
@@ -65,37 +75,37 @@
             <img src="http://placehold.it/150x100">
           </div>
           <div class="content-text">
-            <h3>ТАМ ЕСТЬ Мост дьявола</h3>
-            <p>— №2 —<br>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+            <h3 class="content-header">ТАМ ЕСТЬ Мост дьявола</h3>
+            <p class="content-subtitle">— №2 —<br>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
           </div>
         </div>
-        <div class="features-small">
-          <div class="features-small-item">
-            <h3>НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
-            <p>— №3 —<br>ВСЕ достопримечательности находятся очень близко</p>
+        <div class="feature-small">
+          <div class="feature-small-item">
+            <h3 class="feature-small-header">НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
+            <p class="feature-small-subtitle">— №3 —<br>ВСЕ достопримечательности находятся очень близко</p>
           </div>
-          <div class="features-small-item">
-            <h3>КРАСИВАЯ ДОРОГА</h3>
-            <p>— №4 —<br>ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
+          <div class="feature-small-item">
+            <h3 class="feature-small-header">КРАСИВАЯ ДОРОГА</h3>
+            <p class="feature-small-subtitle">— №4 —<br>ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
           </div>
-          <div class="features-small-item">
-            <h3>МАЛО ТУРИСТОВ</h3>
-            <p>— №5 —<br>Большинство едет в гранд каньон и толпится там</p>
+          <div class="feature-small-item">
+            <h3 class="feature-small-header">МАЛО ТУРИСТОВ</h3>
+            <p class="feature-small-subtitle">— №5 —<br>Большинство едет в гранд каньон и толпится там</p>
           </div>
         </div>
       </div>
       <div class="search">
-        <h2>ЗАИНТЕРЕСОВАЛИСЬ?</h2>
-        <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <h2 class="interest">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
+        <p class="interest-subtitle">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
         <div class="search-hotel">
           <div class="search-hotel-header">
-            <span>ПОИСК ГОСТИНИЦЫ В Седоне</span>
+            <span class="search-hotel-title">ПОИСК ГОСТИНИЦЫ В Седоне</span>
           </div>
           <form>
-            Дата заезда:<input type="text" name="arrival-date">
-            Дата Выезда:<input type="text" name="date-of-departure">
-            Взрослые:<input type="text" name="adults">
-            Дети:<input type="text" name="children">
+            <label>Дата заезда:<input type="text" name="arrival-date"></label>
+            <label>Дата Выезда:<input type="text" name="date-of-departure"></label>
+            <label>Взрослые:<input type="text" name="adults"></label>
+            <label>Дети:<input type="text" name="children"></label>
             <input type="submit" value="НАЙТИ">
           </form>
           <div class="map"></div>

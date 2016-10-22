@@ -7,12 +7,22 @@
   <body>
     <header class="main-header">
       <div class="container">
-        <ul>
-          <li><a href="#">ИНФОРМАЦИЯ</a></li>
-          <li><a href="#">ФОТО И ВИДЕО</a></li>
-          <li><a href="#">КАРТА ШТАТА</a></li>
-          <li><a href="#">ГОСТИНИЦЫ</a></li>
-        </ul>
+        <nav class="main-navigation">
+          <ul class="main-nav-list">
+            <li class="main-nav-item">
+              <a class="main-nav-link" href="#">ИНФОРМАЦИЯ</a>
+            </li>
+            <li class="main-nav-item">
+              <a class="main-nav-link" href="#">ФОТО И ВИДЕО</a>
+            </li>
+            <li class="main-nav-item">
+              <a class="main-nav-link" href="#">КАРТА ШТАТА</a>
+            </li>
+            <li class="main-nav-item">
+              <a class="main-nav-link" href="#">ГОСТИНИЦЫ</a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
     <main class="container">
@@ -20,25 +30,25 @@
         <form>
           <fieldset>
             <legend>ИНФРАСТРУКТУРА:</legend>
-            <input type="checkbox" name="pool" checked>Бассейн
-            <input type="checkbox" name="parking">Паркинг
-            <input type="checkbox" name="wi-fi">WI-FI
+            <label><input type="checkbox" name="pool" checked>Бассейн</label>
+            <label><input type="checkbox" name="parking">Паркинг</label>
+            <label><input type="checkbox" name="wi-fi">WI-FI</label>
           </fieldset>
           <fieldset>
             <legend>Тип жилья:</legend>
-            <input type="checkbox" name="hotel" checked>Гостиница
-            <input type="checkbox" name="motel">Мотель
-            <input type="checkbox" name="apartmants">Апартаменты
+            <label><input type="checkbox" name="hotel" checked>Гостиница</label>
+            <label><input type="checkbox" name="motel">Мотель</label>
+            <label><input type="checkbox" name="apartmants">Апартаменты</label>
           </fieldset>
           <fieldset>
             <legend>Стоимость в сутки (Р):</legend>
-            <input type="text">
+            <label><input type="text"></label>
           </fieldset>
-          <input type="submit" value="ПОКАЗАТЬ"
+          <input type="submit" value="ПОКАЗАТЬ">
         </form>
       </div>
       <div class="found">
-        <h2>Найдено: 3</h2>
+        <h2 class="found-title">Найдено: 3</h2>
         <span>СОРТИРОВКА:</span>
         <a href="#" class="active-found">ПО ЦЕНЕ</a>
         <a href="#" class="disable-found">ПО ТИПУ</a>
