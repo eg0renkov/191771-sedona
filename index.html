@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Городок Седона</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -14,6 +15,7 @@
             </li>
             <li class="main-nav-item">
               <a class="main-nav-link" href="#">ФОТО И ВИДЕО</a>
+            </li>
             <li class="main-nav-item">
               <a class="main-nav-link" href="#">КАРТА ШТАТА</a>
             </li>
@@ -22,12 +24,14 @@
             </li>
           </ul>
         </nav>
-        <div class="logo"></div>
+        <div class="logo">
+          <img src="img/logo.png" width="138px" height="70px" alt="Седона">
+        </div>
       </div>
     </header>
     <main class="container">
       <div class="intro">
-          <img src="http://placehold.it/150x100">
+          <img src="img/welcome.png" width="458px" height="352px" alt="Добро пожаловать">
         </div>
       <div class="content">
         <h3 class="introduction">СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!</h3>
@@ -38,29 +42,29 @@
             <span class="content-number">— №1 — </span><p class="content-subtitle">СЕДОНА — НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
           </div>
           <div class="content-img">
-            <img src="http://placehold.it/150x100">
+            <img src="img/photo-number-1.jpg" width="800px" height="256px" alt="Настоящий городок">
           </div>
         </div>
         <div class="feature">
           <div class="feature-item">
-            <img src="http://placehold.it/150x100">
+            <img src="img/home-icon.png" width="75px" height="72px" alt="Отель">
             <h3 class="feature-header">Жилье</h3>
             <p class="feature-subtitle">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </div>
           <div class="feature-item">
-            <img src="http://placehold.it/150x100">
+            <img src="img/burger-icon.png" width="74px" height="70px" alt="Бургер">
             <h3 class="feature-header">ЕДА</h3>
             <p class="feature-subtitle">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР,Вы НЕ разочаруетесь!</p>
           </div>
           <div class="feature-item">
-            <img src="http://placehold.it/150x100">
+            <img src="img/gift-icon.png" width="64px" height="76px" alt="Сувениры">
             <h3 class="feature-header">СУВЕНИРЫ</h3>
             <p class="feature-subtitle">Не только китайского, но и местного производства!</p>
           </div>
         </div>
         <div class="content-item">
           <div class="content-img">
-            <img src="http://placehold.it/150x100">
+            <img src="img/photo-number-2.jpg" width="800px" height="256px" alt="Мост дьявола">
           </div>
           <div class="content-text">
             <h3 class="content-header">ТАМ ЕСТЬ Мост дьявола</h3>
@@ -96,7 +100,9 @@
             <label for="children">Дети:</label><input type="text" name="children" id="children">
             <input type="submit" value="НАЙТИ">
           </form>
-          <div class="map"></div>
+          <div class="map">
+            <img src="img/map.jpg" width="1200px" height="593px" alt="Карта">
+          </div>
         </div>
       </div>
     </main>
@@ -106,13 +112,21 @@
           <span class="hash">#visitSEDONA</span>
         </section>
         <section class="footer-social">
-          <a class="social-btn social-btn-tw"></a>
-          <a class="social-btn social-btn-fb"></a>
-          <a class="social-btn social-btn-you"></a>
+          <a class="social-btn social-btn-tw">
+            <img src="img/tw.svg" alt="twitter">
+          </a>
+          <a class="social-btn social-btn-fb">
+            <img src="img/fb.svg" alt="facebook">
+          </a>
+          <a class="social-btn social-btn-you">
+            <img src="img/you.svg" alt="youtube">
+          </a>
         </section>
         <section class="footer-copyright">
           <span>WEBSITE by</span>
-          <a href="https://htmlacademy.ru" class="btn-html"></a>
+          <a href="https://htmlacademy.ru" class="btn-html">
+            <img src="img/htmlacademy-logo.png" width="113px" height="39px" alt="HTML-ACADEMY">
+          </a>
         </section>
       </div>
     </footer>

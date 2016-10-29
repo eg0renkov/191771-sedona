@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="10" height="19" viewBox="0 0 10 19">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 19px;
+        fill: #fff;
+        font-family: symbols-sedona, symbols;
+      }
+    </style>
+  </defs>
+  <text id="f" class="cls-1" x="-0.548" y="17.061">f</text>
+</svg>
