@@ -7,20 +7,24 @@
   </head>
   <body>
     <header class="main-header">
-      <div class="container">
+      <div class="container clearfix">
         <nav class="main-navigation">
           <ul class="main-nav-list">
-            <li class="main-nav-item">
+            <div class="menu-left">
+            <li class="main-nav-item-left">
               <a class="main-nav-link" href="#">ИНФОРМАЦИЯ</a>
             </li>
-            <li class="main-nav-item">
+            <li class="main-nav-item-left">
               <a class="main-nav-link" href="#">ФОТО И ВИДЕО</a>
             </li>
-            <li class="main-nav-item">
+          </div>
+          <div class="menu-right">
+            <li class="main-nav-item-right">
               <a class="main-nav-link" href="#">КАРТА ШТАТА</a>
             </li>
-            <li class="main-nav-item">
+            <li class="main-nav-item-right">
               <a class="main-nav-link" href="#">ГОСТИНИЦЫ</a>
+          </div>
             </li>
           </ul>
         </nav>
@@ -29,7 +33,7 @@
         </div>
       </div>
     </header>
-    <main class="container">
+    <main class="container clearfix">
       <div class="intro">
           <img src="img/welcome.png" width="458px" height="352px" alt="Добро пожаловать">
         </div>
@@ -37,36 +41,42 @@
         <h3 class="introduction">СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!</h3>
         <p class="causes">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         <div class="content-item">
-          <div class="content-text">
+          <div class="content-text-left">
             <h3 class="content-header">НАСТОЯЩИЙ ГОРОДОК</h3>
             <span class="content-number">— №1 — </span><p class="content-subtitle">СЕДОНА — НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
           </div>
-          <div class="content-img">
+          <div class="content-img-right">
             <img src="img/photo-number-1.jpg" width="800px" height="256px" alt="Настоящий городок">
           </div>
         </div>
         <div class="feature">
           <div class="feature-item">
-            <img src="img/home-icon.png" width="75px" height="72px" alt="Отель">
+            <div class="feature-icon icon-1">
+              <img src="img/home-icon.png" width="75px" height="72px" alt="Отель">
+            </div>
             <h3 class="feature-header">Жилье</h3>
             <p class="feature-subtitle">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </div>
           <div class="feature-item">
-            <img src="img/burger-icon.png" width="74px" height="70px" alt="Бургер">
+            <div class="feature-icon icon-2">
+              <img src="img/burger-icon.png" width="74px" height="70px" alt="Бургер">
+            </div>
             <h3 class="feature-header">ЕДА</h3>
             <p class="feature-subtitle">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР,Вы НЕ разочаруетесь!</p>
           </div>
           <div class="feature-item">
-            <img src="img/gift-icon.png" width="64px" height="76px" alt="Сувениры">
+            <div class="feature-icon icon-3">
+              <img src="img/gift-icon.png" width="64px" height="76px" alt="Сувениры">
+            </div>
             <h3 class="feature-header">СУВЕНИРЫ</h3>
             <p class="feature-subtitle">Не только китайского, но и местного производства!</p>
           </div>
         </div>
         <div class="content-item">
-          <div class="content-img">
+          <div class="content-img-left">
             <img src="img/photo-number-2.jpg" width="800px" height="256px" alt="Мост дьявола">
           </div>
-          <div class="content-text">
+          <div class="content-text-right">
             <h3 class="content-header">ТАМ ЕСТЬ Мост дьявола</h3>
             <span class="content-number">— №2 —</span><p class="content-subtitle">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
           </div>
@@ -93,21 +103,21 @@
           <div class="search-hotel-header">
             <span class="search-hotel-title">ПОИСК ГОСТИНИЦЫ В Седоне</span>
           </div>
-          <form>
+          <form class="sedona-hotel-form">
             <label for="arrival-date">Дата заезда:</label><input type="date" name="arrival-date" id="arrival-date">
             <label for="date-of-departure">Дата Выезда:</label><input type="date" name="date-of-departure" id="date-of-departure">
             <label for="adults">Взрослые:</label><input type="text" name="adults" id="adults">
             <label for="children">Дети:</label><input type="text" name="children" id="children">
             <input type="submit" value="НАЙТИ">
           </form>
-          <div class="map">
-            <img src="img/map.jpg" width="1200px" height="593px" alt="Карта">
-          </div>
+        </div>
+        <div class="map">
+          <img src="img/map.jpg" width="1200px" height="auto" alt="Карта">
         </div>
       </div>
     </main>
     <footer class="main-footer">
-      <div class="container">
+      <div class="container clearfix">
         <section class="footer-hash">
           <span class="hash">#visitSEDONA</span>
         </section>

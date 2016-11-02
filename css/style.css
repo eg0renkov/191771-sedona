@@ -19,3 +19,549 @@ h3{
   line-height: 26px;
   color: black;
 }
+
+.container {
+  width: 1200px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+
+.menu-left {
+  width: 390px;
+  height: 55px;
+  float: left;
+}
+
+.menu-right {
+  width: 390px;
+  height: 55px;
+  float: right;
+}
+
+.main-nav-item-left {
+  float: left;
+  width: 180px;
+  height: 55px;
+}
+
+.main-nav-item-right {
+  float: right;
+  width: 180px;
+  height: 55px;
+}
+
+.clearfix {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+.logo {
+  width: 138px;
+  height: 70px;
+  margin: 0 auto;
+  top: -14px;
+}
+
+.main-header {
+  margin-bottom: 75px;
+  height: 55px;
+}
+
+.intro {
+  height: 352px;
+  width: 458px;
+  margin: 0 auto;
+  margin-bottom: 143px;
+}
+
+.introduction {
+  margin: 0 auto;
+  width: 440px;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.causes {
+  width: 490px;
+  margin: 0 auto;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+.content-item {
+  height: 255px;
+}
+
+.content-text-left {
+  float: left;
+  width: 400px;
+}
+
+.content-img-right {
+  float: right;
+  width: 800px;
+}
+
+.content-header {
+  width: 155px;
+  min-height: 40px;
+  margin: 0 auto;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 50px;
+}
+
+.content-number {
+  display: block;
+  width: 55px;
+  min-height: 15px;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+
+.content-subtitle {
+  width: 310px;
+  min-height: 35px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+
+.feature {
+  height: 330px;
+}
+
+.feature-item {
+  width: 400px;
+  float: left;
+}
+
+.icon-1 {
+  width: 75px;
+  height: 72px;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+
+.icon-2 {
+  width: 74px;
+  height: 70px;
+  margin: 0 auto;
+  margin-top: 53px;
+}
+
+.icon-3 {
+  width: 64px;
+  height: 70px;
+  margin: 0 auto;
+  margin-top: 53px;
+}
+
+.feature-header {
+  width: 105px;
+  min-height: 18px;
+  margin: 0 auto;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 25px;
+}
+
+.feature-subtitle {
+  width: 285px;
+  min-height: 35px;
+  margin: 0 auto;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 25px;
+
+}
+
+.content-text-right {
+  float: right;
+  width: 400px;
+}
+
+.content-img-left {
+  float: left;
+  width: 800px;
+}
+
+.feature-small {
+  height: 260px;
+}
+
+.feature-small-item {
+  width: 400px;
+  float: right;
+}
+
+.feature-small-header {
+  width: 120px;
+  height: 40px;
+  margin: 0 auto;
+  text-align: center;
+  vertical-align: bottom;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.interest {
+  width: 300px;
+  height: 30px;
+  margin: 0 auto;
+  margin-top: 55px;
+}
+
+.interest-subtitle {
+  width: 435px;
+  min-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 auto;
+  margin-top: 35px;
+}
+
+.search-hotel {
+  width: 575px;
+  height: 485px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.search-hotel-title {
+  display: block;
+  width: 290px;
+  padding:35px 145px;
+  font-size: 21px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 26px;
+}
+
+.sedona-hotel-form {
+  width: 460px;
+  height: 285px;
+  margin: 0 auto;
+  margin-top: 55px;
+
+}
+
+.map {
+  float: left;
+  margin-top: -400px;
+  z-index: 1;
+}
+
+.search-hotel {
+  z-index: 200;
+}
+
+.hash {
+  width: 240px;
+  min-height: 26px;
+  float: left;
+}
+
+.footer-social {
+  width: 575px;
+  height: 50px;
+  float: left;
+}
+
+.footer-copyright {
+  width: 315px;
+  height: 40px;
+  float: right;
+}
+
+.main-footer {
+  height: 120px;
+}
+
+.infrastructure {
+  width: 240px;
+  height: 165px;
+  float: left;
+}
+
+.housing {
+  width: 240px;
+  height: 165px;
+  float: left;
+}
+
+.cost-of {
+  width: 330px;
+  height: 145px;
+  float: right;
+}
+
+.filter {
+  height: 220px;
+  margin-bottom: 30px;
+}
+
+.found-title {
+  float: left;
+  width: 300px;
+  margin-top: 0px;
+}
+
+.found-header {
+  float: left;
+  width: 150px;
+  margin-left: 5px;
+}
+
+.active-found {
+  float: left;
+  width: 100px;
+}
+
+.disable-found {
+  float: left;
+  width: 100px;
+}
+
+.switches {
+  float: right;
+  width: 40px;
+}
+
+.result-item {
+  float: left;
+  width: 1200px;
+  height: 150px;
+}
+
+.result-item-left {
+  float: left;
+  width: 530px;
+}
+
+.result-item-right {
+  float: right;
+  width: 240px;
+  height: 150px;
+}
+
+.result-img {
+  width: 135px;
+  height: 90px;
+  float: left;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.result-header {
+  min-width: 230px;
+  min-height: 25px;
+  float: left;
+  margin-left: 30px;
+}
+
+.result-subtitle {
+  min-width: 200px;
+  min-height: 22px;
+  float: left;
+  margin-left: 30px;
+  margin-top: -15px;
+  text-transform: uppercase;
+}
+
+.result-btn {
+  width: 265px;
+  height: 27px;
+  float: left;
+  margin-left: 30px;
+  margin-top: 15px;
+}
+
+.more {
+  float: left;
+  border: 1px solid black;
+  width: 110px;
+  height: 27px;
+  margin-right: 5px;
+  text-align: center;
+}
+
+.book {
+  float: left;
+  border: 1px solid black;
+  width: 142px;
+  height: 27px;
+  text-align: center;
+}
+
+.star {
+  min-width: 120px;
+  height: 15px;
+  display: inline-block;
+  text-align: right;
+  float: right;
+}
+
+.rating {
+  width: 110px;
+  height: 27px;
+  float: right;
+}
+
+/*Как сместить .rating под .star?*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*======================================
+ Системное оформление - не изменять
+=======================================*/
+
+
+
+body > *,
+body > * > *,
+body > * > * > * {
+  position: relative;
+}
+
+body > *::before,
+body > * > *::before,
+body > * > * > *::before {
+  display: none;
+}
+
+body > *::before {
+  top: -3px;
+  left: -3px;
+}
+
+body > * > *::before {
+  top: -3px;
+  left: -3px;
+}
+
+body > * > * > *::before {
+  top: 0;
+  left: 0;
+}
+
+body > * {
+  background: rgba(0, 128, 0, 0.2);
+  box-shadow: 0 0 0 3px green;
+}
+
+body > *::before {
+  color: white;
+
+  background: green;
+}
+
+body > * > * {
+  background: rgba(255, 45, 82, 0.2);
+  box-shadow: 0 0 0 3px rgb(255, 45, 82);
+}
+
+body > * > *::before {
+  color: white;
+
+  background: rgb(255, 45, 82);
+}
+
+body > * > * > * {
+  background: rgba(234, 255, 45, 0.2);
+  box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
+
+}
+
+body > * > * > *::before {
+  color: black;
+
+  background: rgb(234, 255, 45);
+}
+
+.main-header::before {
+  content: ".main-header";
+}
+
+.container::before {
+  content: ".container";
+}
+
+.main-header .container::before {
+  top: auto;
+  bottom: -28px;
+}
+
+.main-navigation::before {
+  content: ".main-navigation";
+}
+
+.user-block::before {
+  content: ".user-block";
+}
+
+.index-logo::before {
+  content: ".index-logo";
+}
+
+.features::before {
+  content: ".features";
+  top: -28px;
+}
+
+.features-item::before {
+  content: ".features-item";
+}
+
+.index-content::before {
+  content: ".index-content";
+}
+
+.index-content-left::before {
+  content: ".index-content-left";
+  left: auto;
+  right: 0;
+}
+
+.index-content-right::before {
+  content: ".index-content-right";
+  left: auto;
+  right: 0;
+}
+
+.main-footer::before {
+  content: ".main-footer";
+}
+
+.main-footer .container::before {
+  top: -28px;
+}
+
+.footer-contacts::before {
+  content: ".footer-contacts";
+}
+
+.footer-social::before {
+  content: ".footer-social";
+}
+
+.footer-copyright::before {
+  content: ".footer-copyright";
