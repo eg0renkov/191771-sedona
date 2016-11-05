@@ -1,9 +1,16 @@
+html {
+  padding: 0;
+  margin: 0;
+}
+
 body {
 font-size: 14px;
 line-height: 26px;
 color: #333333;
 font-weight: normal;
 font-family: "PT Sans", "Arial", sans-serif;
+padding: 0;
+margin: 0;
 }
 
 
@@ -20,35 +27,34 @@ h3{
   color: black;
 }
 
+.main-header {
+  height: 55px;
+}
+
 .container {
   width: 1200px;
   padding: 0 10px;
   margin: 0 auto;
 }
 
+.main-nav-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  width: 1200px;
+}
 
-.menu-left {
-  width: 390px;
-  height: 55px;
+.item-left {
   float: left;
 }
 
-.menu-right {
-  width: 390px;
-  height: 55px;
+.item-right {
   float: right;
 }
 
-.main-nav-item-left {
-  float: left;
-  width: 180px;
-  height: 55px;
-}
-
-.main-nav-item-right {
-  float: right;
-  width: 180px;
-  height: 55px;
+.main-nav-link {
+  display: block;
+  padding: 20px 70px;
 }
 
 .clearfix {
@@ -60,27 +66,26 @@ h3{
 .logo {
   width: 138px;
   height: 70px;
-  margin: 0 auto;
-  top: -14px;
-}
-
-.main-header {
-  margin-bottom: 75px;
-  height: 55px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform:translateX(-50%);
 }
 
 .intro {
-  height: 352px;
-  width: 458px;
-  margin: 0 auto;
-  margin-bottom: 143px;
+  width: 100%;
+  height: auto;
 }
+
+
+
 
 .introduction {
   margin: 0 auto;
   width: 440px;
   text-align: center;
-  margin-bottom: 32px;
+  margin-bottom: 27px;
+  text-transform: uppercase;
 }
 
 .causes {
@@ -89,6 +94,7 @@ h3{
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 50px;
+  line-height: 26px;
 }
 
 .content-item {
@@ -110,16 +116,18 @@ h3{
   min-height: 40px;
   margin: 0 auto;
   text-align: center;
+  line-height: 21px;
   text-transform: uppercase;
-  margin-top: 50px;
+  margin-top: 55px;
 }
 
 .content-number {
   display: block;
   width: 55px;
   min-height: 15px;
+  line-height: 21px;
   margin: 0 auto;
-  margin-top: 15px;
+  margin-top: 24px;
 }
 
 .content-subtitle {
@@ -127,8 +135,9 @@ h3{
   min-height: 35px;
   text-align: center;
   text-transform: uppercase;
+  line-height: 21px;
   margin: 0 auto;
-  margin-top: 15px;
+  margin-top: 19px;
 }
 
 .feature {
@@ -167,16 +176,18 @@ h3{
   margin: 0 auto;
   text-align: center;
   text-transform: uppercase;
-  margin-top: 25px;
+  margin-top: 28px;
 }
 
 .feature-subtitle {
-  width: 285px;
+  width: 301px;
   min-height: 35px;
   margin: 0 auto;
   text-align: center;
   text-transform: uppercase;
-  margin-top: 25px;
+  line-height: 21px;
+  font-size: 14px;
+  margin-top: 20px;
 
 }
 
@@ -187,16 +198,24 @@ h3{
 
 .content-img-left {
   float: left;
-  width: 800px;
+  width: 10px;
+  height: auto;
 }
 
 .feature-small {
-  height: 260px;
+  height: 255px;
+  width: 1200px;
 }
 
 .feature-small-item {
-  width: 400px;
-  float: right;
+  width: 380px;
+  height: 255px;
+  float: left;
+  margin-right: 20px;
+}
+
+.feature-small-item:nth-child(3) {
+  margin-right: 0;
 }
 
 .feature-small-header {
@@ -204,16 +223,17 @@ h3{
   height: 40px;
   margin: 0 auto;
   text-align: center;
+  line-height: 21px;
   vertical-align: bottom;
   margin-top: 50px;
-  margin-bottom: 30px;
+  margin-bottom: 27px;
 }
 
 .interest {
   width: 300px;
   height: 30px;
   margin: 0 auto;
-  margin-top: 55px;
+  margin-top: 60px;
 }
 
 .interest-subtitle {
@@ -221,15 +241,16 @@ h3{
   min-height: 40px;
   text-align: center;
   text-transform: uppercase;
+  line-height: 24px;
   margin: 0 auto;
-  margin-top: 35px;
+  margin-top: 22px;
 }
 
 .search-hotel {
   width: 575px;
   height: 485px;
   margin: 0 auto;
-  margin-top: 30px;
+  margin-top: 43px;
 }
 
 .search-hotel-title {
@@ -510,9 +531,7 @@ body > * > * > *::before {
   bottom: -28px;
 }
 
-.main-navigation::before {
-  content: ".main-navigation";
-}
+
 
 .user-block::before {
   content: ".user-block";
