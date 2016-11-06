@@ -27,9 +27,6 @@ h3{
   color: black;
 }
 
-.main-header {
-  height: 55px;
-}
 
 .container {
   width: 1200px;
@@ -54,10 +51,10 @@ h3{
 
 .main-nav-link {
   display: block;
-  padding: 20px 70px;
+  padding: 16px 70px;
 }
 
-.clearfix {
+.clearfix::after {
   display: table;
   content: "";
   clear: both;
@@ -70,11 +67,14 @@ h3{
   top: 0;
   left: 50%;
   transform:translateX(-50%);
+  z-index: 100;
 }
 
 .intro {
-  width: 100%;
-  height: auto;
+  width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  z-index: 1;
 }
 
 
@@ -167,7 +167,8 @@ h3{
   width: 64px;
   height: 70px;
   margin: 0 auto;
-  margin-top: 53px;
+  margin-top: 50px;
+  margin-bottom: 33px;
 }
 
 .feature-header {
@@ -247,16 +248,19 @@ h3{
 }
 
 .search-hotel {
-  width: 575px;
-  height: 485px;
-  margin: 0 auto;
-  margin-top: 43px;
+  width: 565px;
+  height: 480px;
+  border: 1px solid black;
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  transform:translateX(-50%);
 }
 
 .search-hotel-title {
-  display: block;
+  display: inline-block;
   width: 290px;
-  padding:35px 145px;
+  padding: 28px 137px;
   font-size: 21px;
   font-weight: bold;
   text-transform: uppercase;
@@ -268,13 +272,11 @@ h3{
   height: 285px;
   margin: 0 auto;
   margin-top: 55px;
-
 }
 
 .map {
-  float: left;
-  margin-top: -400px;
-  z-index: 1;
+  margin-bottom: -120px;
+  margin-top: 135px;
 }
 
 .search-hotel {
@@ -285,22 +287,45 @@ h3{
   width: 240px;
   min-height: 26px;
   float: left;
+  text-transform: uppercase;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+  margin-left: 130px;
+  margin-top: 40px;
 }
 
 .footer-social {
-  width: 575px;
+  width: 200px;
   height: 50px;
   float: left;
+  margin-left: 125px;
+  margin-top: 25px;
 }
 
 .footer-copyright {
-  width: 315px;
+  width: 195px;
   height: 40px;
   float: right;
+  margin-top: 35px;
+  margin-right: 105px;
+}
+
+.footer-copyright span {
+  display: inline-block;
+  padding-top: 5px;
+  text-transform: uppercase;
+}
+
+.btn-html {
+  float: right;
+  width: 113px;
+  height: 39px;
 }
 
 .main-footer {
   height: 120px;
+  z-index: 2;
 }
 
 .infrastructure {
@@ -322,35 +347,61 @@ h3{
 }
 
 .filter {
-  height: 220px;
-  margin-bottom: 30px;
+  height: 210px;
+  margin-bottom: 5px;
 }
 
 .found-title {
   float: left;
-  width: 300px;
-  margin-top: 0px;
+  width: auto;
+  text-transform: uppercase;
+  font-size: 21px;
+  line-height: 26px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 70px;
 }
 
 .found-header {
   float: left;
-  width: 150px;
-  margin-left: 5px;
+  width: auto;
+  font-size: 12px;
+  line-height: 18px;
+  margin-left: 50px;
+  margin-top: 35px;
 }
 
 .active-found {
   float: left;
-  width: 100px;
+  width: 50px;
+  font-size: 12px;
+  line-height: 18px;
+  margin-left: 35px;
+  margin-top: 35px;
 }
 
 .disable-found {
   float: left;
-  width: 100px;
+  width: auto;
+  font-size: 12px;
+  line-height: 18px;
+  margin-left: 35px;
+  margin-top: 35px;
 }
 
 .switches {
   float: right;
   width: 40px;
+  height: 20px;
+  margin-right: 70px;
+  margin-top: 30px;
+}
+
+.swith-up-disable {
+  width: 11px;
+  height: 10px;
+  float: left;
+  margin-right: 15px;
 }
 
 .result-item {
@@ -362,12 +413,14 @@ h3{
 .result-item-left {
   float: left;
   width: 530px;
+  margin-left: 70px;
 }
 
 .result-item-right {
   float: right;
   width: 240px;
   height: 150px;
+  margin-right: 73px;
 }
 
 .result-img {
@@ -383,6 +436,10 @@ h3{
   min-height: 25px;
   float: left;
   margin-left: 30px;
+  margin-top: 27px;
+  text-transform: uppercase;
+  font-size: 21px;
+  line-height: 26px;
 }
 
 .result-subtitle {
@@ -390,23 +447,25 @@ h3{
   min-height: 22px;
   float: left;
   margin-left: 30px;
-  margin-top: -15px;
+  margin-top: -18px;
   text-transform: uppercase;
 }
 
+.result-subtitle span:nth-child(2) {
+  margin-left: 35px;
+}
+
 .result-btn {
-  width: 265px;
-  height: 27px;
   float: left;
   margin-left: 30px;
-  margin-top: 15px;
+  margin-top: 12px;
 }
 
 .more {
   float: left;
   border: 1px solid black;
   width: 110px;
-  height: 27px;
+  height: 25px;
   margin-right: 5px;
   text-align: center;
 }
@@ -414,8 +473,8 @@ h3{
 .book {
   float: left;
   border: 1px solid black;
-  width: 142px;
-  height: 27px;
+  width: 140px;
+  height: 25px;
   text-align: center;
 }
 
@@ -425,15 +484,26 @@ h3{
   display: inline-block;
   text-align: right;
   float: right;
+
+  margin-top: 30px;
 }
 
 .rating {
   width: 110px;
-  height: 27px;
+  height: 25px;
+  border: 1px solid black;
   float: right;
+  margin-top: 95px;
+  margin-right: -120px;
+  text-align: center;
 }
 
-/*Как сместить .rating под .star?*/
+.rating span {
+  text-transform: uppercase;
+  line-height: 21px;
+}
+
+
 
 
 
