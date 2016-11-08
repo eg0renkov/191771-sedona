@@ -11,13 +11,13 @@
         <nav class="main-navigation clearfix">
           <ul class="main-nav-list">
             <li class="main-nav-item item-left">
-              <a class="main-nav-link" href="#">ИНФОРМАЦИЯ</a>
+              <a class="main-nav-link" href="index.html">ИНФОРМАЦИЯ</a>
             </li>
             <li class="main-nav-item item-left">
               <a class="main-nav-link" href="#">ФОТО И ВИДЕО</a>
             </li>
             <li class="main-nav-item item-right">
-              <a class="main-nav-link" href="#">ГОСТИНИЦЫ</a>
+              <a class="main-nav-link" href="catalog.html">ГОСТИНИЦЫ</a>
             </li>
             <li class="main-nav-item item-right">
               <a class="main-nav-link" href="#">КАРТА ШТАТА</a>
@@ -31,25 +31,25 @@
     </header>
     <main class="container clearfix">
       <div class="filter">
-        <form class="clearfix">
+        <form class="form-block clearfix">
           <fieldset class="infrastructure">
-            <legend>ИНФРАСТРУКТУРА:</legend>
-            <input type="checkbox" name="pool" id="pool" checked><label for="pool">БАССЕЙН</label><br>
-            <input type="checkbox" name="parking" id="parking"><label for="parking">Паркинг</label><br>
-            <input type="checkbox" name="wi-fi" id="wi-fi"><label for="wi-fi">WI-FI</label>
+            <legend class="form-title">ИНФРАСТРУКТУРА:</legend>
+            <input class="field-catalog" type="checkbox" name="pool" id="pool" checked><label class="signature-catalog" for="pool">БАССЕЙН</label>
+            <input class="field-catalog" type="checkbox" name="parking" id="parking"><label class="signature-catalog" for="parking">Парковка</label>
+            <input class="field-catalog" type="checkbox" name="wi-fi" id="wi-fi"><label class="signature-catalog" for="wi-fi">WI-FI</label>
           </fieldset>
           <fieldset class="housing">
-            <legend>Тип жилья:</legend>
-            <input type="checkbox" name="hotel" id="hotel" checked><label for="hotel">Гостиница</label><br>
-            <input type="checkbox" name="motel" id="motel"><label for="motel">Мотель</label><br>
-            <input type="checkbox" name="apartmants" id="apartmants"><label for="apartmants">Апартаменты</label>
+            <legend class="form-title">Тип жилья:</legend>
+            <input class="field-catalog" type="checkbox" name="hotel" id="hotel" checked><label class="signature-catalog" for="hotel">Гостиница</label>
+            <input class="field-catalog" type="checkbox" name="motel" id="motel"><label class="signature-catalog" for="motel">Мотель</label>
+            <input class="field-catalog" type="checkbox" name="apartmants" id="apartmants"><label class="signature-catalog" for="apartmants">Апартаменты</label>
           </fieldset>
           <fieldset class="cost-of">
-            <legend>Стоимость в сутки (Р):</legend>
-            <input type="text" name="from" placeholder="От 0">
-            <input type="text" name="before" placeholder="До 3000">
+            <legend class="form-title">Стоимость в сутки (Р):</legend>
+            <input class="field-cost-of" type="text" name="from" placeholder="От 0">
+            <input class="field-cost-of" type="text" name="before" placeholder="До 3000">
             <div class="form-slider"></div>
-            <input class="show" type="submit" value="ПОКАЗАТЬ">
+            <input class="filter-btn" type="submit" value="ПОКАЗАТЬ">
           </fieldset>
 
         </form>
