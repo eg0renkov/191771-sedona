@@ -30,7 +30,6 @@ h3{
 
 .container {
   width: 1200px;
-
   margin: 0 auto;
 }
 
@@ -41,17 +40,23 @@ h3{
   width: 1200px;
 }
 
+.main-nav-item {
+  width: 20%;
+}
+
 .item-left {
   float: left;
+  text-align: left;
 }
 
 .item-right {
   float: right;
+  text-align: right;
 }
 
 .main-nav-link {
   display: block;
-  padding: 16px 70px;
+  padding: 15px 70px;
 }
 
 .clearfix::after {
@@ -251,7 +256,7 @@ h3{
   text-transform: uppercase;
   line-height: 24px;
   margin: 0 auto;
-  padding-bottom: 45px;
+  padding-bottom: 47px;
   font-size: 14px;
 }
 
@@ -280,7 +285,7 @@ h3{
   margin-right: auto;
   left: 0;
   right: 0;
-  padding: 45px 55px;
+  padding: 55px;
   background-color: white;
 }
 
@@ -327,7 +332,7 @@ h3{
 }
 
 .map {
-  margin-bottom: -120px;
+  margin-bottom: -128px;
   position: relative;
   z-index: 1;
 }
@@ -382,6 +387,7 @@ h3{
   height: 120px;
   z-index: 200;
   position: relative;
+  background-color: white;
 }
 
 .form-block {
@@ -393,6 +399,7 @@ h3{
   line-height: 21px;
   font-weight: bold;
   text-transform: uppercase;
+  padding-bottom: 5px;
 }
 
 .signature-catalog {
@@ -407,10 +414,10 @@ h3{
 }
 
 .infrastructure {
-  width: 225px;
+  width: 220px;
   height: 145px;
   float: left;
-  padding-top: 22px;
+  padding-top: 20px;
   margin-right: 7px;
 }
 
@@ -419,7 +426,7 @@ h3{
   width: 240px;
   height: 145px;
   float: left;
-  padding-top: 22px;
+  padding-top: 19px;
 }
 
 .cost-of {
@@ -432,6 +439,7 @@ h3{
 .field-cost-of {
   width: 145px;
   margin-left: 15px;
+  height: 30px;
 }
 
 .filter {
@@ -442,12 +450,12 @@ h3{
 .filter-btn {
   margin: 0 auto;
   display: block;
-  margin-top: 65px;
-  padding: 10px 33px;
+  margin-top: 54px;
+  padding: 8px 33px;
 }
 
 .found {
-  padding: 30px 70px;
+  padding: 32px 70px 27px;
   height: 30px;
   width: 1060px;
 }
@@ -515,21 +523,26 @@ h3{
 
 }
 
+.result {
+  padding-bottom: 4px;
+}
+
 .result-item {
   float: left;
   width: 1060px;
   height: 90px;
-  padding: 30px 70px
+  padding: 30px 70px;
+  padding-right: 74px;
 }
 
 .result-item-left {
   float: left;
-  width: 530px;
+  width: 460px;
 }
 
 .result-item-right {
   float: right;
-  width: 120px;
+  width: 140px;
   height: 80px;
   text-align: right;
   display: inline-block;
@@ -542,25 +555,28 @@ h3{
 }
 
 .result-header {
-
   float: left;
   padding-left: 30px;
-  margin: 0;
+  margin-top: -6px;
+  margin-bottom: 0;
   text-transform: uppercase;
   font-size: 21px;
   line-height: 26px;
+  font-weight: bold;
+  padding-bottom: 5px;
 }
 
 .result-subtitle {
   min-width: 200px;
   float: left;
-  margin-left: 30px;
+  padding-left: 30px;
   text-transform: uppercase;
-  margin-bottom: 12px;
+  padding-bottom: 12px;
 }
 
 .result-subtitle span:nth-child(2) {
-  margin-left: 35px;
+  float: right;
+  padding-right: 20px;
 }
 
 .result-btn {
@@ -590,22 +606,23 @@ h3{
   height: 15px;
   display: inline-block;
   text-align: right;
-  padding-bottom: 50px;
-
-
+  padding-bottom: 47px;
+  margin-right: 4px;
 }
 
 .rating {
   width: 110px;
   height: 25px;
   border: 1px solid black;
-
   text-align: center;
   display: inline-block;
-
+  line-height: 21px;
+  margin-right: 4px;
 }
 
 .rating span {
   text-transform: uppercase;
   line-height: 21px;
+  font-size: 14px;
+  vertical-align: middle;
 }
