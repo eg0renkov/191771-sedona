@@ -351,6 +351,7 @@ h3{
   line-height: 26px;
   padding-left: 131px;
   padding-top: 46px;
+  vertical-align: top;
 }
 
 .footer-social {
@@ -513,6 +514,7 @@ h3{
   display: inline-block;
   text-align: left;
   padding-right: 10px;
+  vertical-align: top;
 }
 
 .swith-down-active {
@@ -520,7 +522,7 @@ h3{
   height: 10px;
   display: inline-block;
   text-align: right;
-
+  vertical-align: top;
 }
 
 .result {
@@ -546,6 +548,7 @@ h3{
   height: 80px;
   text-align: right;
   display: inline-block;
+  vertical-align: top;
 }
 
 .result-img {
@@ -608,6 +611,7 @@ h3{
   text-align: right;
   padding-bottom: 47px;
   margin-right: 4px;
+  vertical-align: top;
 }
 
 .rating {
@@ -618,6 +622,7 @@ h3{
   display: inline-block;
   line-height: 21px;
   margin-right: 4px;
+  vertical-align: top;
 }
 
 .rating span {
