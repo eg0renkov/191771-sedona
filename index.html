@@ -3,7 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Городок Седона</title>
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -24,15 +26,11 @@
             </li>
           </ul>
         </nav>
-        <div class="logo">
-          <a href="index.html"><img src="img/logo.png" width="138px" height="70px" alt="Седона"></a>
-        </div>
+        <a class="logo" href="index.html"></a>
         </div>
     </header>
     <main>
-      <div class="intro">
-        <img src="img/bg-index.jpg" width="1200px" height="508px" alt="Добро пожаловать">
-      </div>
+      <div class="intro"></div>
       <div class="container clearfix">
         <div class="content">
           <h3 class="introduction">СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!</h3>
@@ -49,23 +47,14 @@
           </div>
           <div class="feature">
             <div class="feature-item">
-              <div class="feature-icon icon-1">
-                <img src="img/home-icon.png" width="75px" height="72px" alt="Отель">
-              </div>
               <h3 class="feature-header">Жилье</h3>
               <p class="feature-subtitle">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
             </div>
             <div class="feature-item">
-              <div class="feature-icon icon-2">
-                <img src="img/burger-icon.png" width="74px" height="70px" alt="Бургер">
-              </div>
               <h3 class="feature-header">ЕДА</h3>
               <p class="feature-subtitle">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
             </div>
             <div class="feature-item">
-              <div class="feature-icon icon-3">
-                <img src="img/gift-icon.png" width="64px" height="76px" alt="Сувениры">
-              </div>
               <h3 class="feature-header">СУВЕНИРЫ</h3>
               <p class="feature-subtitle">Не только китайского, но и местного производства!</p>
             </div>
@@ -106,19 +95,17 @@
               <span class="search-hotel-title">ПОИСК ГОСТИНИЦЫ В Седоне</span>
             </div>
             <form class="sedona-hotel-form">
-              <label class="signature-arrival" for="arrival-date">Дата заезда:<input class="field-date" type="date" name="arrival-date" id="arrival-date"></label>
-              <label class="signature-departure" for="date-of-departure">Дата Выезда:<input class="field-date" type="date" name="date-of-departure" id="date-of-departure"></label>
-              <label class="signature-noblock" for="adults">Взрослые:<input class="field-adult" type="text" name="adults" id="adults"></label>
-              <label class="signature-noblock" for="children">Дети:<input class="field-children" type="text" name="children" id="children"></label>
-              <input class="search-btn" type="submit" value="НАЙТИ">
+              <label class="signature-arrival" for="arrival-date">Дата заезда:</label><div class="date-arrival-ico"><input class="field-date-arrival" type="text" name="arrival-date" id="arrival-date" placeholder="24 Апреля 2016"></div>
+              <label class="signature-departure" for="date-of-departure">Дата Выезда:</label><div class="date-departure-ico"><input class="field-date-departure" type="text" name="date-of-departure" id="date-of-departure" placeholder="4 июля 2016"></div>
+              <label class="signature-noblock" for="adults">Взрослые:<span class="minus"></span><input class="field-adult" type="text" name="adults" id="adults" placeholder="2"><span class="plus"></span></label>
+              <label class="signature-noblock" for="children">Дети:<span class="minus"></span><input class="field-children" type="text" name="children" id="children" placeholder="0"><span class="plus"></span></label>
+              <input class="search-btn btn" type="submit" value="НАЙТИ">
             </form>
           </div>
           <div class="map">
             <img src="img/map.jpg" width="auto" height="593px" alt="Карта">
           </div>
-
       </div>
-
     </div>
     </main>
     <footer class="main-footer">
@@ -127,21 +114,13 @@
           <span class="hash">#visitSEDONA</span>
         </section>
         <section class="footer-social">
-          <a class="social-btn social-btn-tw">
-            <img src="img/tw.svg" alt="twitter">
-          </a>
-          <a class="social-btn social-btn-fb">
-            <img src="img/fb.svg" alt="facebook">
-          </a>
-          <a class="social-btn social-btn-you">
-            <img src="img/you.svg" alt="youtube">
-          </a>
+          <a class="social-btn social-btn-tw btn">Twitter</a>
+          <a class="social-btn social-btn-fb btn">Facebook</a>
+          <a class="social-btn social-btn-you btn">Youtube</a>
         </section>
         <section class="footer-copyright">
           <span>WEBSITE by</span>
-          <a href="https://htmlacademy.ru" class="btn-html">
-            <img src="img/htmlacademy-logo.png" width="113px" height="39px" alt="HTML-ACADEMY">
-          </a>
+          <a href="https://htmlacademy.ru" class="btn-html"></a>
         </section>
       </div>
     </footer>
