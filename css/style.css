@@ -407,7 +407,7 @@ h3{
   margin-top: 13px;
 }
 
-.field-date-arrival {
+.field-date {
   margin-left: 15px;
   height: 38px;
   width: 290px;
@@ -421,48 +421,6 @@ h3{
   line-height: 26px;
   color: black;
   float: right;
-}
-
-.date-arrival-ico {
-  position: relative;
-  float: right;
-}
-
-.date-arrival-ico::after {
-  content: "";
-  background-image: url(../img/spritesheet.png);
-  background-repeat: no-repeat;
-  background-position: -10px -475px;
-  width: 21px;
-  height: 22px;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-}
-
-.date-arrival-ico:hover::after {
-  background-position: -10px -433px;
-}
-
-.date-arrival-ico:focus::after {
-  background-position: -10px -391px;
-}
-
-.date-departure-ico {
-  position: relative;
-  float: right;
-}
-
-.date-departure-ico::after {
-  content: "";
-  background-image: url(../img/spritesheet.png);
-  background-repeat: no-repeat;
-  background-position: -10px -475px;
-  width: 21px;
-  height: 22px;
-  position: absolute;
-  top: 15px;
-  right: 10px;
 }
 
 .sedona-hotel-form input::-moz-placeholder {
@@ -473,60 +431,25 @@ h3{
    color: black;
  }
 
-.field-date-departure {
-  margin-left: 15px;
-  height: 38px;
-  width: 290px;
-  padding-right: 40px;
+.field-peoples {
+  width: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+  height: 37px;
   border: none;
   background-color: #f2f2f2;
-  padding-left: 15px;
   font-weight: bold;
   text-transform: uppercase;
   font-size: 14px;
   line-height: 26px;
+  text-align: center;
   color: black;
   float: right;
-  margin-top: 7px;
-}
-
-.field-adult {
-  width: 50px;
-  padding-left: 30px;
-  padding-right: 30px;
-  height: 37px;
-  margin-left: 38px;
-  margin-right: 54px;
-  border: none;
-  background-color: #f2f2f2;
-  font-weight: bold;
-  text-transform: uppercase;
-  font-size: 14px;
-  line-height: 26px;
-  text-align: center;
-  color: black;
-}
-
-.field-children {
-  width: 50px;
-  padding-left: 30px;
-  padding-right: 30px;
-  height: 37px;
-  margin-left: 25px;
-  border: none;
-  background-color: #f2f2f2;
-  font-weight: bold;
-  text-transform: uppercase;
-  font-size: 14px;
-  line-height: 26px;
-  color: black;
-  text-align: center;
 }
 
 .search-btn {
   display: block;
   margin: 0 auto;
-  margin-top: 53px;
   padding: 16px 192px;
   border: none;
   color: white;
@@ -541,6 +464,56 @@ h3{
   text-transform: uppercase;
   color: black;
   font-weight: bold;
+  display: inline-block;
+  float: left;
+  vertical-align: middle;
+  line-height: 37px;
+}
+
+.label-field-bottom {
+  width: 223px;
+  float: left;
+  margin-bottom: 53px;
+}
+
+.label-field-bottom-right {
+  float: right;
+  width: 178px;
+}
+
+.minus {
+  position: absolute;
+  width: 12px;
+  height: 3px;
+  background-image: url(../img/spritesheet.png);
+  background-repeat: no-repeat;
+  background-position: -10px -1034px;
+  top: 20px;
+  left: 125px;
+}
+
+.signature-field-top {
+  margin-bottom: 6px;
+  position: relative;
+}
+
+.calendar {
+  background-image: url(../img/spritesheet.png);
+  background-repeat: no-repeat;
+  background-position: -10px -475px;
+  width: 21px;
+  height: 22px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.calendar:hover {
+  background-position: -10px -433px;
+}
+
+.calendar:focus {
+  background-position: -10px -391px;
 }
 
 .map {
