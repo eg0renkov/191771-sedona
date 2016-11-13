@@ -26,7 +26,9 @@
             </li>
           </ul>
         </nav>
-        <a class="logo" href="index.html"></a>
+        <a class="logo">
+          <img src="img/logo.png" alt="Седона" width="138" height="70">
+        </a>
         </div>
     </header>
     <main>
@@ -42,7 +44,7 @@
               <p class="content-subtitle subtitle-1">СЕДОНА — НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
             </div>
             <div class="content-img">
-              <img src="img/photo-number-1.jpg" width="800px" height="256px" alt="Настоящий городок">
+              <img src="img/photo-number-1.jpg" width="800" height="256" alt="Настоящий городок">
             </div>
           </div>
           <div class="feature">
@@ -61,7 +63,7 @@
           </div>
           <div class="content-item clearfix">
             <div class="content-img">
-              <img src="img/photo-number-2.jpg" width="800px" height="256px" alt="Мост дьявола">
+              <img src="img/photo-number-2.jpg" width="800" height="256" alt="Мост дьявола">
             </div>
             <div class="content-text">
               <h3 class="content-header header-1">ТАМ ЕСТЬ<br> Мост дьявола</h3>
@@ -93,15 +95,21 @@
           <div class="search-hotel">
             <div class="search-hotel-title">ПОИСК ГОСТИНИЦЫ В Седоне</div>
             <form class="sedona-hotel-form">
-              <div class="signature-field-top"><label class="signature-arrival" for="arrival-date">Дата заезда:</label><input class="field-date" type="text" name="arrival-date" id="arrival-date" placeholder="24 Апреля 2016"><span class="calendar"></span></div>
-              <div class="signature-field-top"><label class="signature-arrival" for="arrival-date">Дата выезда:</label><input class="field-date" type="text" name="arrival-date" id="arrival-date" placeholder="4 июля 2016"><span class="calendar"></span></div>
-              <div class="label-field-bottom"><label class="signature-noblock" for="adults">Взрослые:</label><div class="minus-plus"><span class="minus"><input class="field-peoples" type="text" name="adults" id="adults" placeholder="2"></span><span class="plus"></span></div></div>
-              <div class="label-field-bottom label-field-bottom-right"><label class="signature-noblock" for="children">Дети:</label></span><div class="minus-plus"><span class="minus"><input class="field-peoples" type="text" name="children" id="children" placeholder="0"><span class="plus"></span></div></div>
+              <div class="signature-field-top"><label class="signature-date" for="arrival-date-id">Дата заезда:</label><input class="field-date" type="text" name="arrival-date" id="arrival-date-id" placeholder="24 Апреля 2016"><span class="calendar"></span></div>
+              <div class="signature-field-top"><label class="signature-date" for="departure-date-id">Дата выезда:</label><input class="field-date" type="text" name="departure-date" id="departure-date-id" placeholder="4 июля 2016"><span class="calendar"></span></div>
+              <div class="label-field-bottom">
+                <label class="signature-noblock" for="adults">Взрослые:</label>
+                <div class="minus-plus"><span class="minus"></span><input class="field-peoples" type="text" name="adults" id="adults" placeholder="2"><span class="plus"></span></div>
+              </div>
+              <div class="label-field-bottom label-field-bottom-right">
+                <label class="signature-noblock" for="children">Дети:</label>
+                <div class="minus-plus"><span class="minus"></span><input class="field-peoples" type="text" name="children" id="children" placeholder="0"><span class="plus"></span></div>
+              </div>
               <input class="search-btn btn" type="submit" value="НАЙТИ">
             </form>
           </div>
           <div class="map">
-            <img src="img/map.jpg" width="auto" height="593px" alt="Карта">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52379.21538484716!2d-111.79136263800179!3d34.86374052579874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1479015972382" width="1200" height="593" frameborder="0" style="border:0" allowfullscreen></iframe>
           </div>
       </div>
     </div>

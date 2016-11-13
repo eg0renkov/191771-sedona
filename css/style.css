@@ -17,6 +17,10 @@ background-color: white;
 color: black;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
 
 h2 {
 font-size: 30px;
@@ -46,7 +50,7 @@ h3{
 }
 
 .main-nav-item {
-  padding: 0;
+  padding: 14px 0;
   margin: 0;
   width: 154px;
 }
@@ -71,7 +75,6 @@ h3{
 
 .main-nav-link {
   display: block;
-  padding: 14px 0;
   text-align: center;
   text-decoration: none;
   font-weight: bold;
@@ -82,13 +85,13 @@ h3{
 
 .main-nav-link-active {
   display: block;
-  padding: 14px 0;
   text-align: center;
   text-decoration: none;
   font-weight: bold;
   font-size: 14px;
   line-height: 26px;
   color: #766357;
+  cursor: default;
 }
 
 .main-nav-link-active:hover {
@@ -120,9 +123,6 @@ h3{
   position: absolute;
   left: 50%;
   transform:translateX(-50%);
-  background-image: url("../img/spritesheet.png");
-  background-repeat: no-repeat;
-  background-position: -5px -1483px;
 }
 
 
@@ -360,6 +360,7 @@ h3{
   font-weight: bold;
   text-transform: uppercase;
   line-height: 26px;
+  vertical-align: top;
 }
 
 .sedona-hotel-form {
@@ -382,7 +383,7 @@ h3{
   outline: 2px solid #e5e5e5;
 }
 
-.signature-arrival {
+.signature-date {
   text-transform: uppercase;
   padding-bottom: 28px;
   color: black;
@@ -393,6 +394,7 @@ h3{
   text-align: left;
   margin-top: 7px;
   position: relative;
+  vertical-align: top;
 }
 
 .signature-departure {
@@ -405,6 +407,7 @@ h3{
   display: inline-block;
   text-align: left;
   margin-top: 13px;
+  vertical-align: top;
 }
 
 .field-date {
@@ -488,12 +491,73 @@ h3{
   background-image: url(../img/spritesheet.png);
   background-repeat: no-repeat;
   background-position: -10px -1034px;
-  top: 20px;
-  left: 125px;
+  top: 18px;
+  left: 11px;
+}
+
+.minus:hover {
+  position: absolute;
+  width: 12px;
+  height: 3px;
+  background-image: url(../img/spritesheet.png);
+  background-repeat: no-repeat;
+  background-position: -10px -1080px;
+  top: 18px;
+  left: 11px;
+}
+
+.minus:active {
+  position: absolute;
+  width: 12px;
+  height: 3px;
+  background-image: url(../img/spritesheet.png);
+  background-repeat: no-repeat;
+  background-position: -10px -1057px;
+  top: 18px;
+  left: 11px;
+}
+
+.plus {
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  background-position: -10px -1187px;
+  background-image: url(../img/spritesheet.png);
+  background-repeat: no-repeat;
+  top: 14px;
+  right: 13px;
+}
+
+.plus:hover {
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  background-position: -10px -1249px;
+  background-image: url(../img/spritesheet.png);
+  background-repeat: no-repeat;
+  top: 14px;
+  right: 13px;
+}
+
+.plus:active {
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  background-position: -10px -1218px;
+  background-image: url(../img/spritesheet.png);
+  background-repeat: no-repeat;
+  top: 14px;
+  right: 13px;
+}
+
+.minus-plus {
+  float:  right;
+  width: 110px;
+  position: relative;
 }
 
 .signature-field-top {
-  margin-bottom: 6px;
+  margin-bottom: 7px;
   position: relative;
 }
 
@@ -541,7 +605,6 @@ h3{
 
 .footer-social {
   width: 580px;
-  height: 50px;
   float: left;
   line-height: 113px;
   vertical-align: middle;
@@ -734,7 +797,7 @@ h3{
   left: 0;
 }
 
-.infrastructure {
+.left-fieldset {
   width: 220px;
   height: 145px;
   float: left;
@@ -754,7 +817,7 @@ h3{
   color: white;
 }
 
-.cost-of {
+.right-fieldset {
   width: 332px;
   height: 155px;
   float: right;
@@ -763,23 +826,53 @@ h3{
   border: none;
   color: white;
   margin-right: -10px;
+  font-size: 0;
+  text-transform: uppercase;
+}
+
+.field-cost-of-dash {
+  position: relative;
 }
 
 .field-cost-of {
-  width: 145px;
-  margin-left: 13px;
+  width: 157px;
   height: 30px;
   background: none;
   border: 2px solid white;
   border-radius: 3px;
   color: white;
   text-align: center;
+  display: inline-block;
+  font-size: 14px;
+  vertical-align: top;
+}
+
+.field-cost-of-dash:after {
+  content: "";
+  width: 2px;
+  height: 22px;
+  background-color: white;
+  position: absolute;
+  top: 7px;
+  left: 169px;
+}
+
+.field-cost-of-left {
+  border-right: 0;
+  border-radius: 3px 0 0 3px;
+  margin-left: 10px;
+}
+
+.field-cost-of-right {
+  border-left: 0;
+  border-radius: 0 3px 3px 0;
 }
 
 .filter {
   height: 217px;
   margin: 0 auto;
   padding-left: 61px;
+  background-color: #7b9dc0;
   background-image: url("../img/filter-background.jpg");
   background-repeat: no-repeat;
   background-position: 0 -55px;
@@ -794,6 +887,7 @@ h3{
   border: 2px solid white;
   border-radius: 3px;
   color: white;
+  font-size: 14px;
 }
 
 .filter-btn:hover {
@@ -827,17 +921,9 @@ h3{
   margin-top: 5px;
 }
 
-.active-found {
-  float: left;
-  font-size: 12px;
-  line-height: 18px;
-  margin-left: 39px;
-  margin-top: 5px;
-  text-decoration: none;
-  color: #81b3d2;
-}
 
-.disable-found {
+
+.found-item {
   float: left;
   font-size: 12px;
   line-height: 18px;
@@ -848,11 +934,16 @@ h3{
   color: #000000;
 }
 
-.disable-found:hover {
+.active-found {
+  margin-left: 39px;
   color: #81b3d2;
 }
 
-.disable-found:active {
+.found-item:hover {
+  color: #81b3d2;
+}
+
+.found-item:active {
   color: #000000;
   border: none;
 }
@@ -927,11 +1018,11 @@ h3{
   width: 135px;
   height: 90px;
   float: left;
+  margin-right: 30px;
 }
 
 .result-header {
   float: left;
-  margin-left: 31px;
   margin-top: -4px;
   text-transform: uppercase;
   font-size: 21px;
@@ -953,20 +1044,14 @@ h3{
 .result-subtitle {
   min-width: 200px;
   float: left;
-  padding-left: 30px;
   text-transform: uppercase;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
   color: #333333;
 }
 
 .result-subtitle span:nth-child(2) {
   float: right;
   padding-right: 20px;
-}
-
-.result-btn {
-  float: left;
-  margin-left: 30px;
 }
 
 .more {
@@ -980,6 +1065,7 @@ h3{
   text-align: center;
   text-decoration: none;
   font-weight: bold;
+  vertical-align: middle;
 }
 
 .book {
@@ -994,46 +1080,23 @@ h3{
   background-color: #766357;
 }
 
-.star-4 {
-  min-width: 120px;
-  height: 15px;
-  display: inline-block;
-  text-align: right;
-  margin-bottom: 47px;
-  margin-right: 4px;
-  vertical-align: top;
-  background-image: url(../img/spritesheet.png);
-  width: 89px;
+.star {
+  width: 25px;
   height: 17px;
-  background-position: 22px -84px;
+  background-image: url(../img/spritesheet.png);
+  background-repeat: no-repeat;
+  display: inline-block;
+  float: right;
+  background-position: -6px -84px;
+  vertical-align: middle;
 }
 
-.star-2 {
-  min-width: 120px;
-  height: 15px;
+.star-container {
+  height: 30px;
   display: inline-block;
   text-align: right;
-  margin-bottom: 47px;
-  margin-right: 4px;
-  vertical-align: top;
-  background-image: url(../img/spritesheet.png);
-  width: 42px;
-  height: 17px;
-  background-position: 68px -10px;
-}
-
-.star-3 {
-  min-width: 120px;
-  height: 15px;
-  display: inline-block;
-  text-align: right;
-  margin-bottom: 47px;
-  margin-right: 4px;
-  vertical-align: top;
-  background-image: url(../img/spritesheet.png);
-  width: 65px;
-  height: 17px;
-  background-position: 45px -47px;
+  margin-bottom: 33px;
+  vertical-align: bottom;
 }
 
 .rating {
