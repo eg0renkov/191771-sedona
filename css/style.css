@@ -568,7 +568,7 @@ h3{
   background-position: -10px -433px;
 }
 
-.calendar:focus {
+.calendar:active {
   background-position: -10px -391px;
 }
 
@@ -799,16 +799,6 @@ h3{
   color: white;
 }
 
-
-/*.housing {
-  width: 240px;
-  height: 145px;
-  float: left;
-  padding-top: 17px;
-  border: none;
-  color: white;
-}*/
-
 .filter-range {
   width: 330px;
   /*height: 155px;*/
@@ -819,26 +809,6 @@ h3{
   margin-right: -10px;
   /*font-size: 0;*/
   text-transform: uppercase;
-}
-
-/*.field-cost-of-dash {
-  position: relative;
-}*/
-
-.field-cost-of {
-  /*width: 100px;*/
-  /*157*/
-  /*height: 30px;*/
-  /*background: none;
-  border: 2px solid white;
-  border-radius: 3px;
-  color: white;
-  text-align: center;
-  display: inline-block;
-  font-size: 14px;
-  vertical-align: top;
-  cursor: pointer;*/
-
 }
 
 .price-controls {
@@ -933,17 +903,6 @@ h3{
   background: #1c4f80;
 }
 
-/*.field-cost-of-left {
-  border-right: 0;
-  border-radius: 3px 0 0 3px;
-  margin-left: 10px;
-}
-
-.field-cost-of-right {
-  border-left: 0;
-  border-radius: 0 3px 3px 0;
-}*/
-
 .filter {
   height: 217px;
   margin: 0 auto;
@@ -1016,6 +975,7 @@ h3{
 .active-found {
   margin-left: 39px;
   color: #81b3d2;
+  border-bottom: none;
 }
 
 .found-item:hover {
