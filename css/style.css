@@ -353,6 +353,7 @@ h3{
   text-transform: uppercase;
   line-height: 26px;
   vertical-align: top;
+  cursor: pointer;
 }
 
 .sedona-hotel-form {
