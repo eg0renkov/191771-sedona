@@ -274,14 +274,6 @@ h3{
   margin-bottom: 23px;
 }
 
-.feature-header::after {
-  content: "";
-  width: 74px;
-  height: 70px;
-  position: absolute;
-  bottom: 40px;
-}
-
 .feature-subtitle {
   width: 301px;
   margin: 0 auto;
@@ -718,7 +710,7 @@ h3{
   line-height: 21px;
   font-weight: bold;
   text-transform: uppercase;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   color: white;
   font-weight: bold;
 }
@@ -808,36 +800,36 @@ h3{
 }
 
 
-.housing {
+/*.housing {
   width: 240px;
   height: 145px;
   float: left;
   padding-top: 17px;
   border: none;
   color: white;
-}
+}*/
 
-.right-fieldset {
-  width: 332px;
-  height: 155px;
+.filter-range {
+  width: 330px;
+  /*height: 155px;*/
   float: right;
   padding: 0;
-  padding-top: 5px;
   border: none;
   color: white;
   margin-right: -10px;
-  font-size: 0;
+  /*font-size: 0;*/
   text-transform: uppercase;
 }
 
-.field-cost-of-dash {
+/*.field-cost-of-dash {
   position: relative;
-}
+}*/
 
 .field-cost-of {
-  width: 157px;
-  height: 30px;
-  background: none;
+  /*width: 100px;*/
+  /*157*/
+  /*height: 30px;*/
+  /*background: none;
   border: 2px solid white;
   border-radius: 3px;
   color: white;
@@ -845,19 +837,103 @@ h3{
   display: inline-block;
   font-size: 14px;
   vertical-align: top;
+  cursor: pointer;*/
+
 }
 
-.field-cost-of-dash:after {
+.price-controls {
+  height: 33px;
+  margin-bottom: 20px;
+  border: 2px solid white;
+  border-radius: 2px;
+  font-size: 0;
+  position: relative;
+  width: 313px;
+  margin-left: 9px;
+}
+
+.price-controls label {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 31px;
+  vertical-align: top;
+  cursor: pointer;
+}
+
+.price-controls .min-price {
+  width: 90px;
+  padding-left: 65px;
+}
+
+.price-controls .max-price {
+  width: 90px;
+  padding-left: 56px;
+}
+
+.price-controls input {
+  width: 50px;
+  margin: 0;
+  color: inherit;
+  font: inherit;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.price-controls:after {
   content: "";
   width: 2px;
   height: 22px;
   background-color: white;
   position: absolute;
-  top: 7px;
-  left: 169px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.field-cost-of-left {
+.range-controls {
+  position: relative;
+  margin-bottom: 32px;
+  margin-left: 9px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+  width: 99%;
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+  background: #ffffff;
+}
+
+.range-toogle {
+  position: absolute;
+  top: -9px;
+  width: 4px;
+  height: 4px;
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toogle-min {
+  left: 0;
+}
+
+.range-toogle-max {
+  left: 79%;
+}
+
+.range-toogle:hover {
+  background: #1c4f80;
+}
+
+/*.field-cost-of-left {
   border-right: 0;
   border-radius: 3px 0 0 3px;
   margin-left: 10px;
@@ -866,7 +942,7 @@ h3{
 .field-cost-of-right {
   border-left: 0;
   border-radius: 0 3px 3px 0;
-}
+}*/
 
 .filter {
   height: 217px;
@@ -879,15 +955,18 @@ h3{
 }
 
 .filter-btn {
-  margin: 0 auto;
+  margin-left: 94px;
   display: block;
-  margin-top: 54px;
-  padding: 8px 31px;
+  padding: 6px 31px;
   background: none;
   border: 2px solid white;
   border-radius: 3px;
   color: white;
   font-size: 14px;
+  text-transform: uppercase;
+  outline: none;
+  cursor: pointer;
+  line-height: 20px;
 }
 
 .filter-btn:hover {

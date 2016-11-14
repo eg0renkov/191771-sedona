@@ -46,15 +46,25 @@
               <input class="field-catalog" type="checkbox" name="motel" id="motel" checked><label class="signature-catalog" for="motel">Мотель</label>
               <input class="field-catalog" type="checkbox" name="apartmants" id="apartmants" checked><label class="signature-catalog" for="apartmants">Апартаменты</label>
             </fieldset>
-            <fieldset class="right-fieldset">
-              <legend class="form-title">Стоимость в сутки (Р):</legend>
-              <div class="field-cost-of-dash">
-                <input class="field-cost-of field-cost-of-left" type="text" name="from" placeholder="От 0">
-                <input class="field-cost-of field-cost-of-right" type="text" name="before" placeholder="До 3000">
+            <div class="filter-range">
+              <div class="form-title">Стоимость в сутки (Р):</div>
+              <div class="price-controls">
+                <label class="min-price">
+                  ОТ <input type="text" name="min-price" value="0">
+                </label>
+                <label class="max-price">
+                  ДО <input type="text" name="max-price" value="3000">
+                </label>
               </div>
-              <div class="form-slider"></div>
-              <input class="filter-btn" type="submit" value="ПОКАЗАТЬ">
-            </fieldset>
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="range-toogle range-toogle-min"></div>
+                <div class="range-toogle range-toogle-max"></div>
+                </div>
+              <button class="filter-btn" type="submit" value="ПОКАЗАТЬ">Показать</button>
+            </div>
           </form>
         </div>
         <div class="inside-page">
