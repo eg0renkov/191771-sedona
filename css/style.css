@@ -364,6 +364,11 @@ h3{
   right: 0;
   padding: 53px 54px;
   background-color: white;
+  display: none;
+}
+
+.sedona-hotel-form-show {
+  display: block;
 }
 
 .sedona-hotel-form input[type="text"]:hover {

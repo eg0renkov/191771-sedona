@@ -130,6 +130,15 @@
         </section>
       </div>
     </footer>
+    <script>
+    var title = document.querySelector(".search-hotel-title");
+    var popup = document.querySelector(".sedona-hotel-form");
+
+    title.addEventListener("click", function(event){
+      event.preventDefault();
+      popup.classList.toggle("sedona-hotel-form-show");
+    });
+    </script>
   </body>
 </html>
 <!-- коммит -->
