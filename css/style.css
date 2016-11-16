@@ -134,7 +134,6 @@ h3{
   z-index: 100;
 }
 
-
 .intro {
   width: 100%;
   height:508px;
@@ -234,7 +233,7 @@ h3{
 }
 
 .subtitle-4 {
-  width: 260px;
+  width: 262px;
 }
 
 .subtitle-5 {
@@ -672,8 +671,6 @@ h3{
   background-position: 2px -1612px;
 }
 
-
-
 .footer-copyright {
   width: 205px;
   height: 40px;
@@ -829,13 +826,11 @@ h3{
 
 .filter-range {
   width: 330px;
-  /*height: 155px;*/
   float: right;
   padding: 0;
   border: none;
   color: white;
   margin-right: -10px;
-  /*font-size: 0;*/
   text-transform: uppercase;
 }
 
@@ -876,6 +871,7 @@ h3{
   background: none;
   border: none;
   outline: none;
+  height: 28px;
 }
 
 .price-controls:after {
@@ -966,7 +962,6 @@ h3{
   padding: 30px 0 25px;
   padding-left: 72px;
   height: 30px;
-
   margin: 0 auto;
 }
 
@@ -976,9 +971,6 @@ h3{
   font-size: 21px;
   font-weight: bold;
   line-height: 26px;
-  /*margin-top: 30px;
-  margin-bottom: 30px;
-  margin-left: 70px;*/
 }
 
 .found-header {
@@ -988,8 +980,6 @@ h3{
   margin-left: 47px;
   margin-top: 5px;
 }
-
-
 
 .found-item {
   float: left;
@@ -1054,10 +1044,6 @@ h3{
   background-position: -10px -151px;
 }
 
-/*.result {
-  padding-bottom: 4px;
-}*/
-
 .result-item {
   float: left;
   width: 1074px;
@@ -1072,7 +1058,6 @@ h3{
 }
 
 .result-item:last-child {
-  /*padding-bottom: 34px;*/
   margin-bottom: 0;
 }
 
