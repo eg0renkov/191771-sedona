@@ -365,11 +365,11 @@ h3{
   right: 0;
   padding: 53px 54px;
   background-color: white;
-  display: none;
+  display: block;
 }
 
 .sedona-hotel-form-show {
-  display: block;
+  display: none;
 }
 
 .sedona-hotel-form input[type="text"]:hover {
@@ -930,8 +930,9 @@ h3{
   font-size: 14px;
   text-transform: uppercase;
   outline: none;
-  cursor: pointer;
   line-height: 20px;
+  width: 70px;
+  text-decoration: none;
 }
 
 .filter-btn:hover {
