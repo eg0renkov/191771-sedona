@@ -115,7 +115,7 @@ h3{
 }
 
 .main-nav-link:active {
-  color: #000000;
+  color: rgba(0, 0, 0, 0.302);
 }
 
 .clearfix::after {
