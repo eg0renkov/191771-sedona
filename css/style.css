@@ -13,8 +13,12 @@ padding: 0;
 margin: 0;
 position: relative;
 min-width: 1200px;
-background-color: white;
+background-color: #f2f2f2;
 color: black;
+width: 1200px;
+box-shadow: 2px 0px 3px #dbdbdb,
+            -2px 0px 3px #dbdbdb;
+            margin: 0 auto;
 }
 
 img {
@@ -35,11 +39,10 @@ h3{
   color: black;
 }
 
-
-
 .container {
   width: 1200px;
   margin: 0 auto;
+  background-color: white;
 }
 
 .main-nav-list {
@@ -55,27 +58,24 @@ h3{
   width: 154px;
 }
 
-.main-header {
-  padding-left: 6%;
-  padding-right: 6%;
-  margin-bottom: 2px;
+.main-navigation {
+  padding: 0 72px;
+  background-color: white;
+  padding-bottom: 2px;
 }
 
 .item-left {
   float: left;
-  margin-left: 34px;
-  margin-right: 55px;
+  margin-right: 86px;
 }
 
 .item-right {
   float: right;
-  margin-left: 52px;
-  margin-right: 42px;
+  margin-left: 92px;
 }
 
 .main-nav-link {
   display: block;
-  text-align: center;
   text-decoration: none;
   font-weight: bold;
   color: black;
@@ -83,9 +83,17 @@ h3{
   line-height: 26px;
 }
 
+.link-left {
+  text-align: left;
+}
+
+.link-right {
+  text-align: right;
+}
+
 .main-nav-link-active {
   display: block;
-  text-align: center;
+  text-align: right;
   text-decoration: none;
   font-weight: bold;
   font-size: 14px;
@@ -130,7 +138,6 @@ h3{
   width: 1200px;
   height:508px;
   margin: 0 auto;
-  margin-bottom: 60px;
   background-image: url("../img/bg-index.jpg");
 }
 
@@ -138,8 +145,10 @@ h3{
   margin: 0 auto;
   width: 440px;
   text-align: center;
-  margin-bottom: 27px;
+  padding-bottom: 27px;
   text-transform: uppercase;
+  padding-top: 60px;
+  background-color: white;
 }
 
 .causes {
@@ -579,9 +588,11 @@ h3{
 }
 
 .map {
-  margin-bottom: -128px;
+  margin-bottom: -120px;
   position: relative;
   z-index: 1;
+  background-image: url(../img/map.jpg);
+  background-repeat: no-repeat;
 }
 
 .footer-hash {
@@ -685,10 +696,10 @@ h3{
 .main-footer {
   height: 120px;
   z-index: 200;
-  position: absolute;
+  position: relative;
   background-color: white;
-  width: 100%;
   opacity: 0.9;
+  width: 100%;
 }
 
 .form-block {
@@ -705,10 +716,8 @@ h3{
  }
 
 .inside-page {
-  padding-left: 6%;
-  padding-right: 6%;
-  width: 1060px;
-  margin: 0 auto;
+  width: 1055px;
+  background-color: white;
 }
 
 .form-title {
@@ -735,8 +744,8 @@ h3{
 
 .field-catalog + label {
   display: block;
-  margin: 5px 0;
-  margin-bottom: 25px;
+  margin: 9px 0;
+  margin-bottom: 26px;
   line-height: 20px;
   padding-left: 41px;
   position: relative;
@@ -799,7 +808,6 @@ h3{
   width: 220px;
   height: 145px;
   float: left;
-  padding-top: 17px;
   margin-right: 15px;
   border: none;
   color: white;
@@ -831,7 +839,7 @@ h3{
 .price-controls label {
   display: inline-block;
   font-size: 14px;
-  line-height: 31px;
+  line-height: 28px;
   vertical-align: top;
   cursor: pointer;
 }
@@ -942,6 +950,7 @@ h3{
 
 .found {
   padding: 30px 0 25px;
+  padding-left: 72px;
   height: 30px;
 
   margin: 0 auto;
@@ -999,6 +1008,7 @@ h3{
   width: 40px;
   height: 20px;
   padding-top: 10px;
+  margin-right: -78px;
 }
 
 .swith-up {
@@ -1030,20 +1040,26 @@ h3{
   background-position: -10px -151px;
 }
 
-.result {
+/*.result {
   padding-bottom: 4px;
-}
+}*/
 
 .result-item {
   float: left;
-  width: 1060px;
+  width: 1074px;
   height: 90px;
   padding: 30px 0;
-  padding-right: 74px;
-  margin: 0 auto;
+  padding-right: 6%;
+  padding-left: 6%;
   border-top: 1px solid #e5e5e5;
   border-bottom: 1px solid #e5e5e5;
   margin-bottom: -1px;
+  background-color: white;
+}
+
+.result-item:last-child {
+  /*padding-bottom: 34px;*/
+  margin-bottom: 0;
 }
 
 .result-item-left {
@@ -1058,6 +1074,7 @@ h3{
   text-align: right;
   display: inline-block;
   vertical-align: top;
+  margin-right: 5px;
 }
 
 .result-img {
@@ -1065,6 +1082,7 @@ h3{
   height: 90px;
   float: left;
   margin-right: 30px;
+  margin-left: 10px;
 }
 
 .result-header {
@@ -1133,7 +1151,7 @@ h3{
   background-repeat: no-repeat;
   display: inline-block;
   float: right;
-  background-position: -6px -84px;
+  background-position: -4px -84px;
   vertical-align: middle;
 }
 
@@ -1151,7 +1169,6 @@ h3{
   text-align: center;
   display: inline-block;
   line-height: 21px;
-  margin-right: 5px;
   vertical-align: top;
   color: #666666;
   background-color: #f2f2f2;
