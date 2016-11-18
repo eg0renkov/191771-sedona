@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Городок Седона</title>
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   </head>
   <body>
@@ -47,7 +47,7 @@
               <img src="img/photo-number-1.jpg" width="800" height="256" alt="Настоящий городок">
             </div>
           </div>
-          <div class="feature">
+          <div class="feature clearfix">
             <div class="feature-item">
               <h3 class="feature-header">Жилье</h3>
               <p class="feature-subtitle">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
@@ -92,76 +92,48 @@
         <div class="search clearfix">
           <h2 class="interest">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
           <p class="interest-subtitle">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
+          <div class="search-hotel-title">ПОИСК ГОСТИНИЦЫ В Седоне</div>
           <div class="search-hotel">
-            <div class="search-hotel-title">ПОИСК ГОСТИНИЦЫ В Седоне</div>
-            <form class="sedona-hotel-form">
-              <div class="signature-field-top"><label class="signature-date" for="arrival-date-id">Дата заезда:</label><input class="field-date" type="text" name="arrival-date" id="arrival-date-id" placeholder="24 Апреля 2016"><span class="calendar"></span></div>
-              <div class="signature-field-top"><label class="signature-date" for="departure-date-id">Дата выезда:</label><input class="field-date" type="text" name="departure-date" id="departure-date-id" placeholder="4 июля 2016"><span class="calendar"></span></div>
-              <div class="label-field-bottom">
-                <label class="signature-noblock" for="adults">Взрослые:</label>
-                <div class="minus-plus"><span class="minus"></span><input class="field-peoples" type="text" name="adults" id="adults" placeholder="2"><span class="plus"></span></div>
+              <div class="popup popup-show">
+                <form class="sedona-hotel-form">
+                  <div class="signature-field-top"><label class="signature-date" for="arrival-date-id">Дата заезда:</label><input class="field-date" type="text" name="arrival-date" id="arrival-date-id" placeholder="24 Апреля 2016"><span class="calendar"></span></div>
+                  <div class="signature-field-top"><label class="signature-date" for="departure-date-id">Дата выезда:</label><input class="field-date" type="text" name="departure-date" id="departure-date-id" placeholder="4 июля 2016"><span class="calendar"></span></div>
+                  <div class="label-field-bottom">
+                    <label class="signature-noblock" for="adults">Взрослые:</label>
+                    <div class="minus-plus"><span class="minus"></span><input class="field-peoples" type="text" name="adults" id="adults" placeholder="2"><span class="plus"></span></div>
+                  </div>
+                  <div class="label-field-bottom label-field-bottom-right">
+                    <label class="signature-noblock" for="children">Дети:</label>
+                    <div class="minus-plus"><span class="minus"></span><input class="field-peoples" type="text" name="children" id="children" placeholder="0"><span class="plus"></span></div>
+                  </div>
+                  <input class="search-btn btn" type="submit" value="НАЙТИ">
+                </form>
               </div>
-              <div class="label-field-bottom label-field-bottom-right">
-                <label class="signature-noblock" for="children">Дети:</label>
-                <div class="minus-plus"><span class="minus"></span><input class="field-peoples" type="text" name="children" id="children" placeholder="0"><span class="plus"></span></div>
-              </div>
-              <input class="search-btn btn" type="submit" value="НАЙТИ">
-            </form>
           </div>
           <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52379.21538484716!2d-111.79136263800179!3d34.86374052579874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1479015972382" width="1200" height="593" style="border:0" allowfullscreen></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.135657526334!2d-111.8301580591932!3d34.85444381562249!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1479359847916" width="1200" height="575" style="border:0" allowfullscreen></iframe>
           </div>
       </div>
     </div>
     </main>
-    <footer class="main-footer">
+    <footer>
       <div class="container clearfix">
-        <section class="footer-hash">
-          <span class="hash">#visitSEDONA</span>
-        </section>
-        <section class="footer-social">
-          <a class="social-btn social-btn-tw btn">Twitter</a>
-          <a class="social-btn social-btn-fb btn">Facebook</a>
-          <a class="social-btn social-btn-you btn">Youtube</a>
-        </section>
-        <section class="footer-copyright">
-          <span>WEBSITE by</span>
-          <a href="https://htmlacademy.ru" class="btn-html"></a>
-        </section>
+        <div class="main-footer">
+          <section class="footer-hash">
+            <span class="hash">#visitSEDONA</span>
+          </section>
+          <section class="footer-social">
+            <a class="social-btn social-btn-tw btn">Twitter</a>
+            <a class="social-btn social-btn-fb btn">Facebook</a>
+            <a class="social-btn social-btn-you btn">Youtube</a>
+          </section>
+          <section class="footer-copyright">
+              <span class="website-by">WEBSITE by</span>
+            <a href="https://htmlacademy.ru" class="btn-html"></a>
+          </section>
+        </div>
       </div>
     </footer>
-    <script>
-    var title = document.querySelector(".search-hotel-title");
-    var popup = document.querySelector(".sedona-hotel-form");
-    var form = document.querySelector(".sedona-hotel-form");
-    var arrivaldate = popup.querySelector("[name=arrival-date]");
-    var departuredate = popup.querySelector("[name=departure-date]");
-    var adults = popup.querySelector("[name=adults]");
-    var children = popup.querySelector("[name=children]");
-
-    title.addEventListener("click", function(event){
-    event.preventDefault();
-    popup.classList.toggle("sedona-hotel-form-show");
-    arrivaldate.focus();
-    });
-
-    popup.addEventListener("submit", function(event){
-      if (!arrivaldate.value || !departuredate.value || !adults.value || !children.value) {
-        event.preventDefault();
-        console.log(arrivaldate.value);
-        console.log(departuredate.value);
-        console.log(adults.value);
-        console.log(children.value);
-      }
-    });
-
-    window.addEventListener("keydown", function(event) {
-      if (event. keyCode === 27) {
-        if (popup.classList.contains("sedona-hotel-form-show")) {
-          popup.classList.remove("sedona-hotel-form-show");
-        }
-      }
-    });
-    </script>
+    <script src="js/main-min.js"></script>
   </body>
 </html>
